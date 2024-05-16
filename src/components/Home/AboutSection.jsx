@@ -1,49 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const AboutSection = () => {
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const year = new Date().getFullYear();
 
   useEffect(() => {
-    const targetDate = new Date('2023-10-6').getTime() // Replace with your target date
+    const targetDate = new Date("2023-10-6").getTime(); // Replace with your target date
     const updateCountdown = () => {
-      const currentDate = new Date().getTime()
-      const secondsLeft = (targetDate - currentDate) / 1000
+      const currentDate = new Date().getTime();
+      const secondsLeft = (targetDate - currentDate) / 1000;
 
-      const daysCount = Math.floor(secondsLeft / 86400)
-      const hoursCount = Math.floor((secondsLeft % 86400) / 3600)
-      const minutesCount = Math.floor((secondsLeft % 3600) / 60)
-      const secondsCount = Math.floor(secondsLeft % 60)
+      const daysCount = Math.floor(secondsLeft / 86400);
+      const hoursCount = Math.floor((secondsLeft % 86400) / 3600);
+      const minutesCount = Math.floor((secondsLeft % 3600) / 60);
+      const secondsCount = Math.floor(secondsLeft % 60);
 
-      setDays(daysCount)
-      setHours(hoursCount)
-      setMinutes(minutesCount)
-      setSeconds(secondsCount)
-    }
+      setDays(daysCount);
+      setHours(hoursCount);
+      setMinutes(minutesCount);
+      setSeconds(secondsCount);
+    };
 
-    const countdownInterval = setInterval(updateCountdown, 1000)
+    const countdownInterval = setInterval(updateCountdown, 1000);
 
     return () => {
-      clearInterval(countdownInterval)
-    }
-  }, [])
+      clearInterval(countdownInterval);
+    };
+  }, []);
   return (
-    <div className='container'>
-      <h3 className='section-heading text-center mb-3'>
+    <div className="container">
+      <h3 className="section-heading text-center mb-3">
         About Pwani Innovation Week
       </h3>
-      <div className='section-intro single-col-max mx-auto mb-4'>
-        Pwani Innovation Week is a consolidated effort by{' '}
+      <div className="section-intro single-col-max mx-auto mb-4">
+        Pwani Innovation Week is a consolidated effort by{" "}
         <a
-          href='https://www.swahilipothub.co.ke/'
-          target='_blank'
-          rel='noreferrer'
+          href="https://www.swahilipothub.co.ke/"
+          target="_blank"
+          rel="noreferrer"
         >
           Swahilipot Hub Foundation
-        </a>
-            {' '}and its partners to help create a widespread culture of innovation and
+        </a>{" "}
+        and its partners to help create a widespread culture of innovation and
         stimulate the innovation ecosystem in the coastal (pwani)region of
         eastern Africa.
         <br />
@@ -63,54 +64,54 @@ const AboutSection = () => {
       </div>
 
       {/* <!--//benefits-list--> */}
-      <div className='event-countdown text-center mb-3'>
-        <h4 className='countdown-intro mb-2 text-center mb-3'>
-          Pwani Innovation Week 2023 Ends In:
+      <div className="event-countdown text-center mb-3">
+        <h4 className="countdown-intro mb-2 text-center mb-3">
+          Pwani Innovation Week {year} Ends In:
         </h4>
         <div
-          id='countdown-box'
-          class='countdown-box'
+          id="countdown-box"
+          class="countdown-box"
           style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <div className='countdown-item' style={{ margin: '5px 20px' }}>
-            <span className='number'>{days}</span>
+          <div className="countdown-item" style={{ margin: "5px 20px" }}>
+            <span className="number">{days}</span>
             <br />
-            <span className='unit'>Days</span>
+            <span className="unit">Days</span>
           </div>
-          <div className='countdown-item' style={{ margin: '5px 20px' }}>
-            <span className='number'>{hours}</span>
+          <div className="countdown-item" style={{ margin: "5px 20px" }}>
+            <span className="number">{hours}</span>
             <br />
-            <span className='unit'>Hrs</span>
+            <span className="unit">Hrs</span>
           </div>
-          <div className='countdown-item' style={{ margin: '5px 20px' }}>
-            <span className='number'>{minutes}</span>
+          <div className="countdown-item" style={{ margin: "5px 20px" }}>
+            <span className="number">{minutes}</span>
             <br />
-            <span className='unit'>Mins</span>
+            <span className="unit">Mins</span>
           </div>
-          <div className='countdown-item' style={{ margin: '5px 20px' }}>
-            <span className='number'>{seconds}</span>
+          <div className="countdown-item" style={{ margin: "5px 20px" }}>
+            <span className="number">{seconds}</span>
             <br />
-            <span className='unit'>Secs</span>
+            <span className="unit">Secs</span>
           </div>
         </div>
       </div>
       {/* <!--//event-countdown--> */}
-      <div className='about-cta text-center mb-5'>
+      <div className="about-cta text-center mb-5">
         <a
-          className='btn btn-secondary btn-lg mb-5'
-          href='https://drive.google.com/file/d/1O6LfmcAVSTgFIptua6kegJFwy3foMl3r/view?usp=sharing'
-          target='_blank'
-          rel='noreferrer'
+          className="btn btn-secondary btn-lg mb-5"
+          href="https://drive.google.com/file/d/1O6LfmcAVSTgFIptua6kegJFwy3foMl3r/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
         >
           Download Schedule
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

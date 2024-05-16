@@ -27,7 +27,7 @@ const SpeakersSection = () => {
 
   const handleSearch = () => {
     const filtered = speakers.filter((speaker) =>
-      speaker.name.toLowerCase().includes(searchQuery.toLowerCase())
+      speaker.name.toLowerCase().includes(searchQuery.toLowerCase()),
     );
     setFilteredSpeakers(filtered);
   };
@@ -37,7 +37,7 @@ const SpeakersSection = () => {
     setSearchQuery(userInput);
 
     const filtered = speakers.filter((speaker) =>
-      speaker.name.toLowerCase().includes(userInput)
+      speaker.name.toLowerCase().includes(userInput),
     );
     setFilteredSpeakers(filtered);
   };
@@ -48,7 +48,7 @@ const SpeakersSection = () => {
         <div className="container">
           <h3 className="section-heading text-center mb-3">Speakers</h3>
           <div className="section-intro text-center single-col-max mx-auto mb-5">
-            Our Curated list of Speakers for the Pwani Innovation Week 2023
+            Our Curated list of Speakers for the Pwani Innovation Week 2024
           </div>
           <div
             className="speakers-cta text-center py-3 d-flex"
@@ -83,27 +83,27 @@ const SpeakersSection = () => {
           </div>
 
           <div className="row">
-            {searchQuery
-              ? filteredSpeakers.map((speaker) => (
-                  <SpeakerItem
-                    key={speaker.id}
-                    name={speaker.name}
-                    organization={speaker.organization}
-                  />
-                ))
-              : speakers.length > 0
-              ? speakers.map((speaker) => (
-                  <SpeakerItem
-                    key={speaker.id}
-                    name={speaker.name}
-                    organization={speaker.organization}
-                  />
-                ))
-              : (
-                  <h4 className="text-center py-5 text-muted">
-                    Our Speaker List is getting ready; we will update soon!
-                  </h4>
-                )}
+            {searchQuery ? (
+              filteredSpeakers.map((speaker) => (
+                <SpeakerItem
+                  key={speaker.id}
+                  name={speaker.name}
+                  organization={speaker.organization}
+                />
+              ))
+            ) : speakers.length > 0 ? (
+              speakers.map((speaker) => (
+                <SpeakerItem
+                  key={speaker.id}
+                  name={speaker.name}
+                  organization={speaker.organization}
+                />
+              ))
+            ) : (
+              <h4 className="text-center py-5 text-muted">
+                Our Speaker List is getting ready; we will update soon!
+              </h4>
+            )}
           </div>
 
           <div className="speakers-cta text-center py-3">
