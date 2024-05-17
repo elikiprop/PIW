@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       {/* <!-- footer --> */}
-      <footer class="footer py-5 theme-bg-primary">
+      <footer class="footer fixed bottom py-5 theme-bg-primary">
         <div class="container text-center">
           <ul class="social-list list-inline mb-4">
             <li class="list-inline-item me-3">
