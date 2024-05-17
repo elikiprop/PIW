@@ -12,7 +12,7 @@ const AboutHome = () => {
   return (
     <section
       id="about-section"
-      className="about-section section theme-bg-light"
+      className="about-section section  theme-bg-light"
     >
       <AboutSection />
       <PreviousPIW />

@@ -31,7 +31,7 @@ const AboutSection = () => {
     };
   }, []);
   return (
-    <div className="container">
+    <div className="container text-black">
       <h3 className="section-heading text-center mb-3">
         About Pwani Innovation Week
       </h3>
