@@ -12,15 +12,16 @@ const Masthead = () => {
       <div className="container h-100">
         <div className="row h-100 align-items-center">
           <div className="col-12 text-center">
-            <h1 className="fw-dark">Pwani Innovation Week 2023</h1>
+            <h1 className="fw-dark">Pwani Innovation Week {year}</h1>
             <p class="lead">
-              <CalendarMonthOutlinedIcon className="mx-2" />2 - 6 Oct
+              <CalendarMonthOutlinedIcon className="mx-2" />
+              14th - 18th Oct {year}
               <LocationOnIcon className="mx-2" />
               Mombasa, Kenya
             </p>
             <p className="lead">
-              Sailing Beyond Borders: Empowering Youth in the Digital Economy
-              for a Sustainable Future
+              The Pwani We Desire: Youth, Culture, Peace and Innovation in the
+              Decade of Action.
             </p>
             <p class="lead">
               <EmailRounded className="mx-2" />
