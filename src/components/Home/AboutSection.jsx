@@ -49,18 +49,43 @@ const AboutSection = () => {
         eastern Africa.
         <br />
         <br />
-        <strong>
-          Swahilipot Hub Foundation (SPH) is dedicated to supporting youth in
-          overcoming challenges and thriving.
-        </strong>
-        Through strategic partnerships with communities, government entities,
-        SOs, and local leaders, the foundation leverages the strengths and
-        diversity of individuals from all backgrounds to empower young people
-        and enhance their quality of life. With a strong commitment to
-        inclusivity, cooperation, self-reliance, and respect for diversity, the
-        foundation allows young individuals to take charge of their journey,
-        while making long-term investments, forging partnerships, and fostering
-        a vibrant culture of youth engagement in all aspects of development.
+        <p className="text-dark-500 font-semibold">
+          Pwani Innovation Week is aconsolidated effort by swahiliPot Hub
+          Foundation and its partners to help create a widespread culture of
+          innovation and stimulate the innovation ecosystem in the
+          coastal(pwani)region of eastern Africa.
+        </p>
+        <div>
+          <h3 className="text-dark-500 font-bold text-center">
+            Thematic Areas{" "}
+          </h3>
+        </div>
+        <ul>
+          <li>
+            <strong>Emerging Tech and Innovation:</strong>This thematic areas
+            will focus on insiring the exploration and adoptation of
+            cutting-edge technologies for coastal resilince,resource management
+            and disaster preparedness.
+          </li>
+          <li>
+            <strong>Climate Action:</strong>This thematic area will focus on
+            leveraging innovative approaches and adaptive strategies for
+            mitigating the impacts of climate change on coastal communities.
+          </li>
+          <li>
+            <strong>Peace, Inclusivity and Equity:</strong>This track will focus
+            on building strategies for resilience that can foster social
+            cohesion and collaboration among diverse stakeholders, contributing
+            to peace and inclusivity in coastal areas.
+          </li>
+          <li>
+            <strong>Participatory Governance:</strong> This track will focus on
+            initiatives that promote citizen science, community-based
+            monitoring, and co-management approaches that empower locals to
+            actively participate in the governance and management of resources
+            and infrastructure.
+          </li>
+        </ul>
       </div>
 
       {/* <!--//benefits-list--> */}
