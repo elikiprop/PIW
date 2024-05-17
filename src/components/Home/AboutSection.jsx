@@ -87,6 +87,26 @@ const AboutSection = () => {
           </li>
         </ul>
       </div>
+      <div className="">
+        <h3 className="text-center font-bold">Objectives</h3>
+        <ol className="">
+          <li>
+            To showcase untapped innovation potential across Pwani by
+            highlighting successful youth-led ventures.
+          </li>
+          <li>
+            To cultivate a vibrant innovation ecosystem within Pwani by
+            fostering youth participation, equipping them with relevant skills
+            and knowledge, and creating an environment that retains their talent
+            for regional development.
+          </li>
+          <li>
+            To leverage the region's unique coastal economies (Blue, Green,
+            Orange, Digital economies) and rich biodiversity to attract domestic
+            and foreign investment.
+          </li>
+        </ol>
+      </div>
 
       {/* <!--//benefits-list--> */}
       <div className="event-countdown text-center mb-3">
