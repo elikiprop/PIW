@@ -8,7 +8,7 @@ const AboutSection = () => {
   const year = new Date().getFullYear();
 
   useEffect(() => {
-    const targetDate = new Date("2023-10-6").getTime(); // Replace with your target date
+    const targetDate = new Date("2024-10-14").getTime(); // Replace with your target date
     const updateCountdown = () => {
       const currentDate = new Date().getTime();
       const secondsLeft = (targetDate - currentDate) / 1000;
@@ -145,16 +145,7 @@ const AboutSection = () => {
         </div>
       </div>
       {/* <!--//event-countdown--> */}
-      <div className="about-cta text-center mb-5">
-        <a
-          className="btn btn-secondary btn-lg mb-5"
-          href="https://drive.google.com/file/d/1O6LfmcAVSTgFIptua6kegJFwy3foMl3r/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Download Schedule
-        </a>
-      </div>
+      
     </div>
   );
 };

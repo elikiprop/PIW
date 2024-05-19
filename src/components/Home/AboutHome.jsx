@@ -15,7 +15,7 @@ const AboutHome = () => {
       className="about-section section  theme-bg-light"
     >
       <AboutSection />
-      <PreviousPIW />
+      {/* <PreviousPIW /> */}
     </section>
   );
 };

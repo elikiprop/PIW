@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
           {/* <!--//social-list--> */}
 
-          <ul className="footer-links list-inline mx-auto mb-4">
+          {/* <ul className="footer-links list-inline mx-auto mb-4">
             <li className="list-inline-item">
               <Link to="/speakers">Speakers</Link>
             </li>
@@ -47,7 +47,7 @@ const Footer = () => {
             <li className="list-inline-item">
               <Link to="/schedule">Program</Link>
             </li>
-          </ul>
+          </ul> */}
           {/* <!--//footer-link--> */}
 
           {/* <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */}
