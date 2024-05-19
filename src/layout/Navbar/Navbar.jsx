@@ -49,10 +49,10 @@ function Navbar() {
             </div>
             <div className="navbar-btn order-lg-2">
               <a
-                className="btn btn-secondary"
-                href="https://drive.google.com/file/d/1O6LfmcAVSTgFIptua6kegJFwy3foMl3r/view?usp=sharing"
+                className="btn btn-secondary disabled"
+                href="/"
               >
-                Download Schedule
+                Schedule
               </a>
             </div>
             <button
@@ -73,18 +73,8 @@ function Navbar() {
             >
               <ul className="nav navbar-nav">
                 <li className="nav-item">
-                  <Link to="/speakers" className="nav-link scrollto">
-                    Speakers
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/schedule" className="nav-link scrollto">
-                    Schedule
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/getInvolved" className="nav-link scrollto">
-                    Get-Involved
+                  <Link to="/about" className="nav-link scrollto disabled">
+                    About
                   </Link>
                 </li>
               </ul>

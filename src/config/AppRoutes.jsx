@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <Route path="schedule" element={<Schedule />} />
       <Route path="getInvolved" element={<GetInvolved />} />
       <Route path="about" element={<About />} />
-      <Route path="" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
