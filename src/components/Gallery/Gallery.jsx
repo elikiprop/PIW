@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './gallery.module.css'; // Corrected the import path
+import classes from './gallery.module.css'; 
 
 const imageFiles = [
   'images/1.jpg',
@@ -17,23 +17,32 @@ const imageFiles = [
   'images/13.jpg',
   'images/14.jpg',
   'images/15.jpg',
+  'images/16.jpg',
+  'images/17.jpg',
+  'images/18.jpg',
+  'images/19.jpg',
+  'images/20.jpg',
+  'images/21.jpg',
 ];
 
 const Gallery = () => {
   return (
     <div>
-      <h1 className={classes.title}>Gallery</h1> {/* Added title */}
+      <h1 className={classes.title}>Welcome To 2023 Pwani-Innovation Week Gallery</h1>
       <div className={classes.gallery}>
         {imageFiles.map((image, index) => (
           <div className={classes.galleryItem} key={index}>
             <img
               src={`${process.env.PUBLIC_URL}/${image}`}
-              alt={`Gallery item ${index + 1}`} // Updated alt text
+              alt={`Gallery item ${index + 1}`}
               height={350}
               width={450}
             />
           </div>
         ))}
+      </div>
+       <div className={classes.footer}>
+        End of 2023 PIW Pictures
       </div>
     </div>
   );
