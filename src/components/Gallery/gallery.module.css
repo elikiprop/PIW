@@ -1,7 +1,7 @@
 .galleryContainer {
-  text-align: center; /* Center align the content */
+  text-align: center; 
   margin-bottom: 20px;
-  background-color: #f0f0f0; /* Background color for the entire container */
+  background-color: #f0f0f0; 
   padding: 20px;
   border-radius: 8px;
 }
@@ -13,9 +13,9 @@
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  background-color: grey; /* Background color for the title */
-  color: white; /* Text color for the title */
-  padding: 0; /* Remove padding */
+  background-color: grey; 
+  color: white; 
+  padding: 0; 
 }
 
 @keyframes marquee {
@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
-  background-color: #fff; /* Background color for the gallery */
+  background-color: #fff; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -55,14 +55,14 @@ img {
 
 .buttons {
   margin-top: 20px;
-  background-color: #444; /* Background color for the buttons container */
+  background-color: #444; 
   padding: 10px;
   border-radius: 8px;
 }
 
 .buttons button {
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #007bff; 
+  color: white; 
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
@@ -71,7 +71,7 @@ img {
 }
 
 .buttons button:hover {
-  background-color: #0056b3; /* Button hover background color */
+  background-color: #0056b3;
 }
 
 .hidden {
@@ -81,9 +81,9 @@ img {
 .footer {
   font-size: 2em;
   margin-top: 20px;
-  background-color: #333; /* Background color for the footer */
-  color: white; /* Text color for the footer */
+  background-color: #333; 
+  color: white; 
   padding: 10px 0;
   border-radius: 8px;
-  text-align: center; /* Center align the text */
+  text-align: center; 
 }
