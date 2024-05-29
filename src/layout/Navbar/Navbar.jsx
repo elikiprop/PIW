@@ -48,7 +48,7 @@ function Navbar() {
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <Link to="/gallery" className="btn btn-secondary enabled">
-                Gallery
+                2023 PIW Gallery
               </Link>
             </div>
             <button
