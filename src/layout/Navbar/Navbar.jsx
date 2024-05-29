@@ -14,22 +14,17 @@ function Navbar() {
 
       if (header) {
         if (scrollTop > 100) {
-          // console.log("Here point");
           header.classList.add("header-shrink");
         } else {
           header.classList.remove("header-shrink");
         }
-      } else {
-        // console.log("Error here");
       }
     };
 
-    // Attach the headerAnimation function to various window events
     window.addEventListener("load", headerAnimation);
     window.addEventListener("resize", headerAnimation);
     window.addEventListener("scroll", headerAnimation);
 
-    // Cleanup event listeners when the component unmounts
     return () => {
       window.removeEventListener("load", headerAnimation);
       window.removeEventListener("resize", headerAnimation);
@@ -48,12 +43,13 @@ function Navbar() {
               </Link>
             </div>
             <div className="navbar-btn order-lg-2">
-              <a
-                className="btn btn-secondary disabled"
-                href="/"
-              >
+              <a className="btn btn-secondary disabled" href="/">
                 Schedule
               </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <Link to="/gallery" className="btn btn-secondary enabled">
+                Gallery
+              </Link>
             </div>
             <button
               className="navbar-toggler"

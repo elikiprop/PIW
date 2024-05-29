@@ -5,6 +5,8 @@ import Statsblock from "../components/Home/Statsblock";
 // import Ticketcards from "../components/Home/Ticketcards";
 // import Infosec from "../components/Home/Infosec";
 import AboutHome from "../components/Home/AboutHome";
+import Gallery from "../components/Gallery/Gallery"; // Import Gallery component
+
 
 const Home = () => {
   return (

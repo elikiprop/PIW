@@ -5,6 +5,7 @@ import Schedule from "../pages/Schedule";
 import NotFound from "../pages/NotFound";
 import About from "../pages/About";
 import GetInvolved from "../pages/GetInvolved";
+import AboutGallery from "../pages/AboutGallery"; // Corrected import
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="schedule" element={<Schedule />} />
       <Route path="getInvolved" element={<GetInvolved />} />
       <Route path="about" element={<About />} />
+      <Route path="gallery" element={<AboutGallery />} /> {/* Corrected component name */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
