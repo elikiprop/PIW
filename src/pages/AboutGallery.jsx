@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from '../components/Gallery/Gallery'; 
+import Gallery from '../components/Gallery/Gallery'; // Importing the AboutGallery component
 
 const aboutGallery = () => {
   return (
