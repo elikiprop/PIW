@@ -14,7 +14,6 @@ const Home = () => {
       <Masthead />
       <Statsblock />
       <AboutHome />
-      <Gallery/>
       {/* <Speakers /> */}
       {/* <Schedule /> */}
       {/* <Ticketcards /> */}
