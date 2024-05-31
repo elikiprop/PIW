@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from './gallery.module.css'; 
 
 const imageFiles = [
@@ -26,12 +26,22 @@ const imageFiles = [
 ];
 
 const Gallery = () => {
+  const [clickedImageIndex, setClickedImageIndex] = useState(null);
+
+  const handleClickImage = (index) => {
+    setClickedImageIndex(index === clickedImageIndex ? null : index);
+  };
+
   return (
     <div>
       <h1 className={classes.title}>Welcome To 2023 Pwani-Innovation Week Gallery</h1>
       <div className={classes.gallery}>
         {imageFiles.map((image, index) => (
-          <div className={classes.galleryItem} key={index}>
+          <div
+            className={`${classes.galleryItem} ${index === clickedImageIndex ? classes.zoomed : ''}`}
+            key={index}
+            onClick={() => handleClickImage(index)}
+          >
             <img
               src={`${process.env.PUBLIC_URL}/${image}`}
               alt={`Gallery item ${index + 1}`}
@@ -41,7 +51,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-       <div className={classes.footer}>
+      <div className={classes.footer}>
         End of 2023 PIW Pictures
       </div>
     </div>
